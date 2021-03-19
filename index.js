@@ -33,7 +33,7 @@ Test your createMenuItems function by doing the following:
 const menu = [
   {name: 'pizza', price: 6, catagory: 'lunch'},
   {name: 'steak', price: 10, catagory: 'dinner'},
-  {name: 'pie', price: 3, catagory: 'dessert'},
+  {name: 'pie', price: 3, catagory: 'dessert'}
 ];
 
 console.log(createMenuItem(menu));
