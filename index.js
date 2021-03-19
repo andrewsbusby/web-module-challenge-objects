@@ -56,13 +56,13 @@ export const burger = {
   discount: function(person){
     if(person === 'teacher' || 'student'){
       this.price = 18 * .75;
-    }else(person === 'public'){
-      this.price = 18 *  .9;
-    }
+    }else(person === 'public');
+      this.price = 18 *  .75;
+    
     return this.price;
   }
 }
-
+console.log(burger.discount('student'));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
@@ -136,7 +136,7 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(array) {
- return `${array[7].name} gave the retaurant a ${array[7].rating} star review, and their feedback was: ${array[7].feedback}`;
+ return `${array[7].name} gave the restaurant a ${array[7].rating} star review, and their feedback was: ${array[7].feedback}`;
 } 
 console.log(getLastReview(reviews));
 
